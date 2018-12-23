@@ -2,15 +2,13 @@
   "defaultSeverity": "error",
   "extends": ["tslint:all", "tslint-config-prettier"],
   "rules": {
-    "typedef": [
-      true,
-      "call-signature",
-      "parameter",
-      "member-variable-declaration"
-    ],
+    "typedef": [true, "call-signature", "parameter"],
     "no-any": true,
     "no-inferred-empty-object-type": true,
-    "completed-docs": false
+    "completed-docs": false,
+    "no-parameter-properties": false,
+    "file-name-casing": [true, "pascal-case"],
+    "no-magic-numbers": [false]
   },
   "rulesDirectory": []
 }
