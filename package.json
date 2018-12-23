@@ -1,0 +1,48 @@
+{
+  "author": "Tushar Mathur <tusharmath@gmail.com>",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "description": "A typescript based doubly linked list data structure",
+  "keywords": [
+    "linked",
+    "list",
+    "typescript",
+    "double",
+    "data",
+    "structure",
+    "performance"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "dbl-linked-list-ds",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tusharmath/dbl-linked-list-ds.git"
+  },
+  "scripts": {
+    "lint": "tslint --project .",
+    "prepublishOnly": "tsc -d",
+    "prettier": "git ls-files | grep '.ts$' | xargs prettier --write --config=.prettierrc",
+    "semantic-release": "semantic-release",
+    "test": "mocha --require=ts-node/register --watch-extensions ts test/*.ts",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "version": "0.0.0-development",
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "cz-conventional-changelog": "^2.1.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.15.3",
+    "semantic-release": "^15.13.1",
+    "travis-deploy-once": "^5.0.11",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2",
+    "typescript-tslint-plugin": "^0.2.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "generator-kips": {
+    "promptValues": {
+      "projectName": "dbl-linked-list-ds",
+      "projectDescription": "A typescript based doubly linked list data structure",
+      "keywords": "linked list typescript double data structure performance"
+    }
+  }
+}
