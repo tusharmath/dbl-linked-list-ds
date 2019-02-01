@@ -110,17 +110,17 @@ describe('LinkedList', () => {
     })
   })
 
-  describe('pop()', () => {
+  describe('shift()', () => {
     it('should return the head', () => {
       const q = new LinkedList(1, 2, 3, 4, 5)
-      const actual = q.pop()
+      const actual = q.shift()
       const expected = 1
       assert.strictEqual(actual, expected)
     })
 
     it('should return undefined', () => {
       const q = new LinkedList<number>()
-      const actual = q.pop()
+      const actual = q.shift()
       const expected = undefined
       assert.strictEqual(actual, expected)
     })

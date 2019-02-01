@@ -41,15 +41,6 @@ export class LinkedList<T> {
     return this.headN
   }
 
-  public pop(): T | undefined {
-    const h = this.head()
-    if (h !== undefined) {
-      this.remove(h)
-
-      return h.value
-    }
-  }
-
   public remove(n: LinkedListNode<T>): void {
     if (n.left !== undefined && n.right !== undefined) {
       n.left.right = n.right
@@ -66,6 +57,15 @@ export class LinkedList<T> {
     }
     if (this.length > 0) {
       this.length -= 1
+    }
+  }
+
+  public shift(): T | undefined {
+    const h = this.head()
+    if (h !== undefined) {
+      this.remove(h)
+
+      return h.value
     }
   }
 
