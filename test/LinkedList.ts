@@ -125,4 +125,20 @@ describe('LinkedList', () => {
       assert.strictEqual(actual, expected)
     })
   })
+
+  describe('pop()', () => {
+    it('should return the head', () => {
+      const q = new LinkedList(1, 2, 3, 4, 5)
+      const actual = q.pop()
+      const expected = 5
+      assert.strictEqual(actual, expected)
+    })
+
+    it('should return undefined', () => {
+      const q = new LinkedList<number>()
+      const actual = q.pop()
+      const expected = undefined
+      assert.strictEqual(actual, expected)
+    })
+  })
 })
