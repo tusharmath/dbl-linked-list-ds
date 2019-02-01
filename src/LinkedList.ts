@@ -6,6 +6,12 @@ export class LinkedList<T> {
   private headN: Node<T> = undefined
   private tailN: Node<T> = undefined
 
+  public constructor(...values: T[]) {
+    for (const i of values) {
+      this.add(i)
+    }
+  }
+
   public add(val: T): LinkedListNode<T> {
     const node = new LinkedListNode(val)
     if (this.length === 0) {

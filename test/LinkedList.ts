@@ -98,4 +98,15 @@ describe('LinkedList', () => {
       assert.deepStrictEqual(results, [100, 200, 300, 400])
     })
   })
+
+  describe('constructor()', () => {
+    it('should add values passed to the constructor', () => {
+      const results: number[] = []
+      const q = new LinkedList(1, 2, 3, 4, 5)
+      q.forEach(i => results.push(i.value))
+
+      const expected = [1, 2, 3, 4, 5]
+      assert.deepStrictEqual(results, expected)
+    })
+  })
 })
